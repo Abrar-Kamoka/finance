@@ -1438,7 +1438,7 @@ canvas {
 .main-slider h2 {
     margin: 0;
     margin-bottom: 32px;
-    color: #fff;
+    color: #0d0920;
     font-weight: 900;
     opacity: 0;
     visibility: hidden;
@@ -1453,7 +1453,7 @@ canvas {
 
 .main-slider p {
     font-size: 20px;
-    color: var(--thm-base);
+    color: var(--thm-primary);
     margin: 0;
     line-height: 30px;
     margin-bottom: 53px;
@@ -1749,8 +1749,8 @@ canvas {
 .brand-one {
     position: relative;
     display: block;
-    background-color: var(--thm-black);
-    padding: 99px 0 208px;
+    background-color: var(--thm-primary);
+    padding: 5px 0 208px;
 }
 
 .brand-one .swiper-container {
