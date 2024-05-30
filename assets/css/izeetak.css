@@ -1408,6 +1408,7 @@ canvas {
 .main-slider-shape-1 {
     position: absolute;
     bottom: 0;
+    top: 20;
     right: 0;
     background-size: cover;
     opacity: 0;
@@ -1417,7 +1418,7 @@ canvas {
 
 .main-slider .swiper-slide-active .main-slider-shape-1 {
     opacity: 1;
-    transform: translate(0);
+    transform: translate(80);
     transition: all 1000ms ease;
     transition-delay: 200ms;
 }
@@ -1436,16 +1437,16 @@ canvas {
 }
 
 .main-slider h2 {
-    margin: 0;
+    margin-top: 0;
     margin-bottom: 32px;
     color: #0d0920;
-    font-weight: 900;
+    font-weight: 700;
     opacity: 0;
     visibility: hidden;
     transform: translateY(120px);
     transition-delay: 1000ms;
     transition: transform 2000ms ease, opacity 2000ms ease;
-    font-size: 90px;
+    font-size: 70px;
     line-height: 90px;
     letter-spacing: -0.02em;
     z-index: 30;
