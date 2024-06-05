@@ -1065,6 +1065,18 @@
 
 
 
+/* whyChoose */
+@media (max-width: 768px) {
+    .about-one__small-img {
+        bottom: -60px; /* Adjust positioning for smaller screens */
+        left: -80px;
+        box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4); /* Smaller shadow for smaller screens */
+    }
+
+    .about-one__small-img > img {
+        box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4); /* Smaller shadow for smaller screens */
+    }
+}
 
 
 

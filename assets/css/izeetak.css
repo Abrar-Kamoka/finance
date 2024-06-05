@@ -1416,6 +1416,26 @@ canvas {
     z-index: 2;
 }
 
+.main-slider-slicer3_4{
+    position: absolute;
+    bottom: 0px;  /* Adjust the distance from the bottom */
+    top: auto;    /* Ensure it's not conflicting with the bottom position */
+    right: 0px;  /* Adjust the distance from the right */
+    width: 1600px;   /* Adjust width as needed */
+    height: auto;   /* Maintain aspect ratio */
+    background-size: cover;
+    opacity: 0;
+    transform: translateX(200px);
+    z-index: 2;
+}
+
+.main-slider .swiper-slide-active .main-slider-slicer3_4 {
+    opacity: 1;
+    transform: translate(80);
+    transition: all 1000ms ease;
+    transition-delay: 200ms;
+}
+
 .main-slider .swiper-slide-active .main-slider-shape-1 {
     opacity: 1;
     transform: translate(80);
@@ -1902,6 +1922,12 @@ canvas {
     margin-right: 70px;
 }
 
+.services__left {
+    position: relative;
+    display: block;
+    margin-left: 70px;
+}
+
 .about-one__img-box {
     position: relative;
     display: block;
@@ -1917,6 +1943,18 @@ canvas {
     content: "";
     border-radius: var(--thm-bdr-radius);
 }
+
+/* .services__img-box:before {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 30px;
+    height: 200px;
+    background-color: var(--thm-extra);
+    content: "";
+    border-radius: var(--thm-bdr-radius);
+} */
+
 
 .about-one__img-box:after {
     position: absolute;
@@ -1966,11 +2004,22 @@ canvas {
     bottom: -90px;
     left: -120px;
     z-index: 2;
+    box-shadow: 10px -10px 20px rgba(19, 92, 35, 0.5);
+}   
+
+.about-one__small-img > img {
+    border-radius: var(--thm-bdr-radius);
+    box-shadow: 10px -10px 20px rgba(19, 92, 35, 0.5);
 }
 
-.about-one__small-img>img {
-    border-radius: var(--thm-bdr-radius);
+
+.services__small-img {
+    position: absolute;
+    bottom: -90px;
+    right: -120px;
+    z-index: 2;
 }
+
 
 .about-one__right {
     position: relative;
@@ -1989,7 +2038,7 @@ canvas {
     position: relative;
     display: block;
     margin-left: 21px;
-    margin-top: 32px;
+    margin-top: 30px;
 }
 
 .about-one__points-box:before {
@@ -2605,13 +2654,13 @@ canvas {
     background-position: center;
     background-size: cover;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.6;
 }
 
 
 .improve-one-bg.jarallax div div {
     background-color: var(--thm-black);
-    background-blend-mode: luminosity;
+    background-blend-mode: lighten;
 }
 
 .improve-one__left {
@@ -3123,7 +3172,7 @@ canvas {
     background-position: center;
     background-color: var(--thm-extra);
     background-blend-mode: luminosity;
-    opacity: 0.15;
+    opacity: 0.3;
     z-index: -1;
 }
 
@@ -4997,7 +5046,7 @@ canvas {
     background-size: cover;
     background-position: center;
     mix-blend-mode: luminosity;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 
@@ -5006,7 +5055,8 @@ canvas {
     top: 0;
     bottom: 0;
     right: 0;
-    width: 570px;
+    /* width: 570px; */
+    width: 760px;
     background-repeat: no-repeat;
 }
 
