@@ -1044,23 +1044,6 @@
         margin-right: 80px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -1086,11 +1069,11 @@
     }
 
     .main-slider-shape-1 {
-        display: none;
+        display: flex;
     }
 
     .main-slider__nav-two {
-        display: none;
+        display: flex;
     }
 
     .main-slider-two h2 {
@@ -1125,8 +1108,8 @@
     }
 
     .main-slider-shape-1 {
-        display: none
-    }
+        display: none;
+}
 
     #main-slider-pagination {
         max-width: 540px;

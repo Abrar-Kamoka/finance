@@ -493,27 +493,27 @@
     mobileNavContainer.innerHTML = navContent;
   }
 
-  if ($(".mobile-nav__container .main-menu__list").length) {
-    let dropdownAnchor = $(
-      ".mobile-nav__container .main-menu__list .dropdown > a"
-    );
-    dropdownAnchor.each(function () {
-      let self = $(this);
-      let toggleBtn = document.createElement("BUTTON");
-      toggleBtn.setAttribute("aria-label", "dropdown toggler");
-      toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
-      self.append(function () {
-        return toggleBtn;
-      });
-      self.find("button").on("click", function (e) {
-        e.preventDefault();
-        let self = $(this);
-        self.toggleClass("expanded");
-        self.parent().toggleClass("expanded");
-        self.parent().parent().children("ul").slideToggle();
-      });
-    });
-  }
+  // if ($(".mobile-nav__container .main-menu__list").length) {
+  //   let dropdownAnchor = $(
+  //     ".mobile-nav__container .main-menu__list .dropdown > a"
+  //   );
+  //   dropdownAnchor.each(function () {
+  //     let self = $(this);
+  //     let toggleBtn = document.createElement("BUTTON");
+  //     toggleBtn.setAttribute("aria-label", "dropdown toggler");
+  //     toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
+  //     self.append(function () {
+  //       return toggleBtn;
+  //     });
+  //     self.find("button").on("click", function (e) {
+  //       e.preventDefault();
+  //       let self = $(this);
+  //       self.toggleClass("expanded");
+  //       self.parent().toggleClass("expanded");
+  //       self.parent().parent().children("ul").slideToggle();
+  //     });
+  //   });
+  // }
 
   if ($(".mobile-nav__toggler").length) {
     $(".mobile-nav__toggler").on("click", function (e) {
@@ -816,6 +816,21 @@
     }
 
 
+    // we work with
+    // $(document).ready(function(){
+    //   $(".testimonial-one__carousel").owlCarousel({
+    //     loop: true,
+    //     margin: 10,
+    //     nav: true,
+    //     autoplay: true,
+    //     autoplayTimeout: 500, // Time between slides in milliseconds (2 seconds)
+    //     autoplaySpeed: 1000, // Speed of transition in milliseconds (1 second)
+    //     navSpeed: 1000, // Speed of nav buttons in milliseconds (1 second)
+    //     items: 1 // Number of items to display at once
+    //   });
+    // });
+    
+
     //Testimonials Two
     if ($('.listing-details__gallery .bxslider').length) {
       $('.listing-details__gallery .bxslider').bxSlider({
@@ -829,11 +844,6 @@
         pagerCustom: '.listing-details__gallery .slider-pager .listing-details__thumb-box'
       });
     };
-
-
-
-
-
   });
 
   // window scroll event
