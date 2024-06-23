@@ -565,6 +565,10 @@
         padding: 50px 25px 50px;
     }
 
+    /* .services-one .row{
+    padding-left: 30;
+    } */
+
     .share-the-joy__img {
         display: none;
     }
@@ -1289,6 +1293,9 @@
         padding: 0 30px;
     }
 
+    .service-details__faq{
+        padding-right: 130px;
+    }
 
     .main-menu .mobile-nav__toggler {
         margin-right: 0;
