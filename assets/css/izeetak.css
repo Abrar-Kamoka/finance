@@ -1405,7 +1405,7 @@ canvas {
 
 .main-slider .swiper-slide {
     position: relative;
-    background-color: var(--thm-black);
+    background-color: var(--thm-gray);
 }
 
 .main-slider .image-layer {
