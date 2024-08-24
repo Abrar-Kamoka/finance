@@ -495,26 +495,48 @@
 
   //mobileview dd
   if ($(".mobile-nav__container .main-menu__list").length) {
-    let dropdownAnchor = $(
-      ".mobile-nav__container .main-menu__list .dropdown > a"
-    );
+    let dropdownAnchor = $(".mobile-nav__container .main-menu__list .dropdown > a");
     dropdownAnchor.each(function () {
-      let self = $(this);
-      let toggleBtn = document.createElement("BUTTON");
-      toggleBtn.setAttribute("aria-label", "dropdown toggler");
-      toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
-      self.append(function () {
-        return toggleBtn;
-      });
-      self.find("button").on("click", function (e) {
-        e.preventDefault();
         let self = $(this);
-        self.toggleClass("expanded");
-        self.parent().toggleClass("expanded");
-        self.parent().parent().children("ul").slideToggle();
-      });
+        let toggleBtn = document.createElement("BUTTON");
+        toggleBtn.setAttribute("aria-label", "dropdown toggler");
+        toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
+        self.append(function () {
+            return toggleBtn;
+        });
+        self.find("button").on("click", function (e) {
+            e.preventDefault();
+            let self = $(this);
+            self.toggleClass("expanded");
+            self.parent().toggleClass("expanded");
+            self.parent().parent().children("ul").slideToggle();
+        });
     });
-  }
+}
+
+// my dropdown
+// Handle mobile dropdowns
+// if ($(".mobile-nav__container .main-menu__list").length) {
+//   let dropdownAnchor = $(".mobile-nav__container .main-menu__list .dropdown > a");
+//   dropdownAnchor.each(function () {
+//       let self = $(this);
+//       let toggleBtn = document.createElement("BUTTON");
+//       toggleBtn.setAttribute("aria-label", "dropdown toggler");
+//       toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
+//       self.append(function () {
+//           return toggleBtn;
+//       });
+//       self.find("button").on("click", function (e) {
+//           e.preventDefault();
+//           let self = $(this);
+//           self.toggleClass("expanded");
+//           self.parent().toggleClass("expanded");
+//           self.parent().parent().children("ul").slideToggle();
+//       });
+//   });
+// }
+
+// my dropdown ended
 
   if ($(".mobile-nav__toggler").length) {
     $(".mobile-nav__toggler").on("click", function (e) {
@@ -886,7 +908,7 @@
         var $thePane = $('.tab-pane' + paneTarget);
         var twentyTwentyContainer = '#' + objName;
         var twentyTwentyHeight = $thePane.find(twentyTwentyContainer).height();
-        if (0 === twentyTwentyHeight) {
+        if (0=== twentyTwentyHeight) {
           $thePane.find(twentyTwentyContainer).trigger('resize');
         }
       });

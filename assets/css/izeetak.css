@@ -293,8 +293,65 @@ canvas {
     color: #fff;
     cursor: pointer;
 }
+/* my dropdown */
 
+.dropdown-menu {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: auto; /* Allow the dropdown to adjust width automatically */
+    min-width: 200px; /* Set a minimum width for the dropdown */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
 
+/* Dropdown items */
+.dropdown-menu li {
+    margin-bottom: 8px;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive dropdown adjustments */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        max-height: 150px; /* Reduce max height on smaller screens */
+        width: 100%; /* Make the dropdown full width */
+        padding: 5px;
+        background-color: #022E69;
+    }
+
+    .dropdown-menu a {
+        padding: 10px 15px;
+    }
+}
+
+/* Mobile view specific styles */
+@media (max-width: 480px) {
+    .dropdown-menu {
+        max-height: 120px; /* Further reduce max height for very small screens */
+    }
+
+    .dropdown-menu a {
+        padding: 8px 10px;
+    }
+}
+
+/* my dropdown ended */
 .preloader {
     position: fixed;
     background-color: #fff;
@@ -1426,27 +1483,47 @@ canvas {
 
 
 .main-slider-shape-1 {
-    position: absolute;
+    /* position: absolute;
     bottom: 20;
-    width: 1600px;   /* Adjust width as needed */
+    width: 1600px; 
     right: 210px;
     background-size: cover;
     opacity: 0;
     transform: translateX(200px);
-    z-index: 2;
+    z-index: 2; */
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
 }
 
 .main-slider-slicer3_4{
-    position: absolute;
-    bottom: 0px;  /* Adjust the distance from the bottom */
-    top: 0px;    /* Ensure it's not conflicting with the bottom position */
-    right: 0px;  /* Adjust the distance from the right */
-    width: 1600px;   /* Adjust width as needed */
-    height: 20;   /* Maintain aspect ratio */
+    /* position: absolute;
+    bottom: 0px;  
+    top: 0px;    
+    right: 0px;  
+    width: 1600px;   
+    height: 20;  
     background-size: cover;
     opacity: 0;
     transform: translateX(200px);
-    z-index: 2;
+    z-index: 2; */
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
 }
 
 .main-slider .swiper-slide-active .main-slider-slicer3_4 {
@@ -1474,12 +1551,25 @@ canvas {
     position: relative;
     display: block;
     z-index: 30;
+
+
+}
+.main-slider__content {
+    position: relative;
+    display: block;
+    z-index: 30;
+    color: rgb(10, 12, 100); /* Ensure text is readable */
 }
 
+.main-slider__content span {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+    padding: 5px 10px; /* Space around the text */
+    border-radius: 5px; /* Rounded corners for the text background */
+}
 .main-slider h2 {
     margin-top: 0;
     margin-bottom: 32px;
-    color: #0d0920;
+    color: #ffffff;
     font-weight: 700;
     opacity: 0;
     visibility: hidden;
@@ -1494,7 +1584,7 @@ canvas {
 
 .main-slider p {
     font-size: 20px;
-    color: var(--thm-primary);
+    color: #ffffff;
     margin: 0;
     line-height: 30px;
     margin-bottom: 53px;
