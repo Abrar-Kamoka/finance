@@ -1119,18 +1119,21 @@
     }
 
     .main-slider-shape-1 {
-        padding-left: 120px; 
+        padding-right: 120px; 
         transition: all 0.3s ease; 
  
     }
     .main-slider-slicer3_4{
-        padding-left: 380px; /* Adjust the value as needed */
+        padding-right: 680px; /* Adjust the value as needed */
         transition: all 0.3s ease; /* Smooth transition effect */
         /* font-size: 40px;
         line-height: 90px;
         letter-spacing: -0.02em;
         font-weight: 400;  */
 
+    }
+    .services__small-img{
+       display: none;
     }
 
     #main-slider-pagination {
@@ -1143,7 +1146,11 @@
 
     .main-slider h2 {
         font-size: 40px;
-        line-height: 38px;
+        line-height: 58px;
+    }
+
+    .main-slider p{
+        line-height: 35px;
     }
 
     .main-slider__nav-two {

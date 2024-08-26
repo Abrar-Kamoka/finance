@@ -1497,10 +1497,6 @@ canvas {
     bottom: 0;
     left: 0;
     right: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
 }
 
 .main-slider-slicer3_4{
@@ -1520,10 +1516,6 @@ canvas {
     bottom: 0;
     left: 0;
     right: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
 }
 
 .main-slider .swiper-slide-active .main-slider-slicer3_4 {
@@ -1577,7 +1569,7 @@ canvas {
     transition-delay: 1000ms;
     transition: transform 2000ms ease, opacity 2000ms ease;
     font-size: 70px;
-    line-height: 90px;
+    line-height: 95px;
     letter-spacing: -0.02em;
     z-index: 30;
 }
@@ -4207,6 +4199,7 @@ canvas {
     z-index: -1;
     opacity: 0.3;
     background-color: var(--thm-black);
+    
 }
 
 
@@ -4219,6 +4212,11 @@ canvas {
     position: relative;
     display: block;
     text-align: center;
+    
+}
+.video-one__inner h2{
+    
+    line-height: 60px;
 }
 
 .video-one__video-link {
@@ -4267,6 +4265,7 @@ canvas {
     -webkit-animation: ripple 3s infinite;
     animation: ripple 3s infinite;
     border-radius: var(--thm-bdr-radius);
+    
 }
 
 .video-one__video-icon .ripple:before {
@@ -4288,7 +4287,14 @@ canvas {
     font-weight: 800;
     line-height: 60px;
     margin-top: 45px;
-    color: var(--thm-extra);
+    color: var(--thm-base);
+}
+
+.video-one__title span{
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+    padding: 0px 5px 5px 5px; /* Space around the text */
+    border-radius: 5px; /* Rounded corners for the text background */
+    
 }
 
 /*--------------------------------------------------------------
