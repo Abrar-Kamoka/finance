@@ -5388,13 +5388,13 @@ canvas {
 .service-details {
     position: relative;
     display: block;
-    padding: 120px 0 120px;
+    padding: 0px 0 120px;
 }
 
 .service-eachdetails {
     position: relative;
     display: block;
-    padding: 120px 0 240px;
+    padding: 0px 0 240px;
 
 }
 
